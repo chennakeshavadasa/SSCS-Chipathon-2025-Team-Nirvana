@@ -43,10 +43,10 @@ By bridging theoretical concepts with practical design, our Mosbius Chip makes d
 | `VSTG1_N`      | Output    | Analog      | Output of first stage of Ring Amplifier (negative branch)                   |
 | `VCTRL_P`      | Input     | Analog      | Deadzone voltage for current-starved inverters (PMOS path)                  |
 | `VCTRL_N`      | Input     | Analog      | Deadzone voltage for current-starved inverters (NMOS path)                  |
-| `VCTRLP_RG`    | Output    | Bias Ctrl   | Process-invariant PMOS bias from deadzone regulation circuit                |
-| `VCTRLN_RG`    | Output    | Bias Ctrl   | Process-invariant NMOS bias from deadzone regulation circuit                |
-| `VGP`          | Input     | Bias        | Gate voltage for third stage PMOS                                           |
-| `VGN`          | Input     | Bias        | Gate voltage for third stage NMOS                                           |
+| `VCTRLP_RG`    | Output    | Analog      | Process-invariant PMOS bias from deadzone regulation circuit                |
+| `VCTRLN_RG`    | Output    | Analog      | Process-invariant NMOS bias from deadzone regulation circuit                |
+| `VGP`          | Input     | Analog      | Gate voltage for third stage PMOS                                           |
+| `VGN`          | Input     | Analog      | Gate voltage for third stage NMOS                                           |
 | `VDD`          | Power     | Supply      | Positive power supply (typically 3.3V)                                      |
 | `GND`          | Power     | Ground      | Ground / reference voltage                                                  |
 | `VOUT_PLUS`    | Output    | Analog      | Positive output of Ring Amplifier                                           |
