@@ -21,7 +21,14 @@ By bridging theoretical concepts with practical design, our Mosbius Chip makes d
 
 
 ## Specification
+
 - **Bandwidth**: *50MHz*
 - **Load Capacitor**: *250pF*
 - **Transient settling**: *≤50nsec*
 - **VDD**: *3.3V*
+
+## Architecture 
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/4a06a853-9d20-465e-aee2-c2d34ddffeee" alt="Screenshot_2025-06-22_171527" width="600"/>
+</div>
