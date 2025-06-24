@@ -33,5 +33,27 @@ By bridging theoretical concepts with practical design, our Mosbius Chip makes d
   <img src="https://github.com/user-attachments/assets/4a06a853-9d20-465e-aee2-c2d34ddffeee" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
 
+## Pin-Out Diagram
+
+| Pin Name       | Direction | Type        | Description                                                                 |
+|----------------|-----------|-------------|-----------------------------------------------------------------------------|
+| `VIN_PLUS`     | Input     | Analog      | Positive input to Ring Amplifier                                            |
+| `VIN_MINUS`    | Input     | Analog      | Negative input to Ring Amplifier                                            |
+| `VSTG1_P`      | Output    | Analog      | Output of first stage of Ring Amplifier (positive branch)                   |
+| `VSTG1_N`      | Output    | Analog      | Output of first stage of Ring Amplifier (negative branch)                   |
+| `VCTRL_P`      | Input     | Analog      | Deadzone voltage for current-starved inverters (PMOS path)                  |
+| `VCTRL_N`      | Input     | Analog      | Deadzone voltage for current-starved inverters (NMOS path)                  |
+| `VCTRLP_RG`    | Output    | Bias Ctrl   | Process-invariant PMOS bias from deadzone regulation circuit                |
+| `VCTRLN_RG`    | Output    | Bias Ctrl   | Process-invariant NMOS bias from deadzone regulation circuit                |
+| `VGP`          | Input     | Bias        | Gate voltage for third stage PMOS                                           |
+| `VGN`          | Input     | Bias        | Gate voltage for third stage NMOS                                           |
+| `VDD`          | Power     | Supply      | Positive power supply (typically 3.3V)                                      |
+| `GND`          | Power     | Ground      | Ground / reference voltage                                                  |
+| `VOUT_PLUS`    | Output    | Analog      | Positive output of Ring Amplifier                                           |
+| `VOUT_MINUS`   | Output    | Analog      | Negative output of Ring Amplifier                                           |
+
+
+---
+
 
 
