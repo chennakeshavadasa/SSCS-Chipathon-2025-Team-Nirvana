@@ -21,6 +21,6 @@ By bridging theoretical concepts with practical design, our Mosbius Chip makes d
 
 
 ## Specification
-- Bandwidth: 50MHz
-- Load Capacitor: 250pF
-- Transient settling: ≤50nsec
+- **Bandwidth**: 50MHz
+- **Load Capacitor**: 250pF
+- **Transient settling**: ≤50nsec
