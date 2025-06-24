@@ -32,3 +32,27 @@ By bridging theoretical concepts with practical design, our Mosbius Chip makes d
 <div align="center">
   <img src="https://github.com/user-attachments/assets/4a06a853-9d20-465e-aee2-c2d34ddffeee" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
+
+## Pin Diagram
+
+           +---------------------------------------------------+
+           |                   CHIPATHON-MOSBIUS               |
+           |                    TEAM NIRVANA                   |
+           |                                                   |
+           |  VOUT_MINUS       ┌──────────────┐     VOUT_PLUS  |
+           |  ◄─────────────── │              │ ─────────────► |
+           |                  │              │                |
+           |    VIN1_MINUS ◄──┤              ├──► VIN1_PLUS    |
+           |                  │              │                |
+           |     VIN2_MINUS ◄─┤   Core AMP    ├─► VG1          |
+           |                  │              │                |
+           |      VCTRL_N ◄───┤              ├──► VCTRL_P      |
+           |                  │              │                |
+           |     VCTRL_RG ◄───┤              ├──► PBIAS        |
+           |                  │              │                |
+           |        NBIAS ◄───┤              ├──► VDD          |
+           |                  │              │                |
+           |         GND ◄────┤              ├────────────────┐
+           |                  └──────────────┘                │
+           +--------------------------------------------------+
+
