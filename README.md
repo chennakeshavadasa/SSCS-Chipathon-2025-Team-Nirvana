@@ -24,3 +24,4 @@ By bridging theoretical concepts with practical design, our Mosbius Chip makes d
 - **Bandwidth**: 50MHz
 - **Load Capacitor**: 250pF
 - **Transient settling**: ≤50nsec
+- **VDD**: 3.3V
