@@ -4,7 +4,7 @@ K {}
 V {}
 S {}
 E {}
-T {Stage-2 Ring Amplifier design Testbench} 510 -740 0 0 1 1 {}
+T {Stage-2 Ring Amplifier design Testbench} 740 -740 0 0 1 1 {}
 N 460 -390 460 -310 {lab=vcm}
 N 460 -450 460 -420 {lab=#net1}
 N 460 -280 460 -250 {lab=#net2}
@@ -93,6 +93,20 @@ N 950 -150 950 -110 {lab=GND}
 N 950 -180 950 -150 {lab=GND}
 N 860 -180 910 -180 {lab=vctrln}
 N 950 -490 950 -480 {lab=#net8}
+N 460 -80 2240 -80 {lab=GND}
+N 1420 -140 1420 -90 {lab=GND}
+N 1420 -90 1420 -80 {lab=GND}
+N 700 -140 700 -80 {lab=GND}
+N 950 -110 950 -80 {lab=GND}
+N 1090 -120 1090 -80 {lab=GND}
+N 460 -600 460 -520 {lab=VDD}
+N 460 -600 2240 -600 {lab=VDD}
+N 2240 -600 2240 -390 {lab=VDD}
+N 2030 -600 2030 -400 {lab=VDD}
+N 1420 -600 1420 -520 {lab=VDD}
+N 1670 -600 1670 -520 {lab=VDD}
+N 950 -600 950 -550 {lab=VDD}
+N 700 -600 700 -580 {lab=VDD}
 C {symbols/nfet_03v3.sym} 440 -280 0 0 {name=M3
 L=0.28u
 W=0.22u
@@ -121,7 +135,6 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {devices/vdd.sym} 460 -520 0 0 {name=l3 lab=VDD}
 C {symbols/nfet_03v3.sym} 440 -150 0 0 {name=M5
 L=0.28u
 W=0.22u
@@ -136,7 +149,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {devices/gnd.sym} 460 -80 0 0 {name=l4 lab=GND}
+C {devices/gnd.sym} 1420 -80 0 0 {name=l4 lab=GND}
 C {symbols/nfet_03v3.sym} 2220 -150 0 0 {name=M6
 L=0.28u
 W=0.22u
@@ -165,8 +178,6 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {devices/vdd.sym} 2240 -390 0 0 {name=l7 lab=VDD}
-C {devices/gnd.sym} 2240 -80 0 0 {name=l8 lab=GND}
 C {symbols/pfet_03v3.sym} 1400 -340 0 0 {name=M8
 L=0.5u
 W=15.375u
@@ -182,12 +193,9 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {devices/isource.sym} 1420 -220 0 0 {name=I2 value=10u}
-C {devices/gnd.sym} 1420 -140 0 0 {name=l9 lab=GND}
 C {devices/ngspice_probe.sym} 2180 -220 0 0 {name=r10}
-C {devices/vdd.sym} 1420 -520 0 0 {name=l10 lab=VDD}
 C {devices/bsource.sym} 1090 -190 0 0 {name=B2 VAR=V FUNC="3.3 / ( 1 + exp(-10000 * V(Vout_stg2_rp,VDZ_RP)))" }
 C {devices/lab_pin.sym} 1340 -340 0 0 {name=p2 sig_type=std_logic lab=VDZ_RP}
-C {devices/gnd.sym} 1090 -120 0 0 {name=l11 lab=GND}
 C {devices/lab_pin.sym} 1090 -250 2 0 {name=p4 sig_type=std_logic lab=vctrln}
 C {devices/vsource.sym} 300 -460 0 0 {name=V1 value=3.3 savecurrent=false}
 C {devices/gnd.sym} 300 -390 0 0 {name=l1 lab=GND}
@@ -213,10 +221,14 @@ tran 1m 10m 1m
 C {devices/code.sym} 160 -190 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
-
 .lib /foss/pdks/volare/gf180mcu/versions/0fe599b2afb6708d281543108caf8310912f54af/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
 .include /foss/pdks/volare/gf180mcu/versions/0fe599b2afb6708d281543108caf8310912f54af/gf180mcuD/libs.tech/ngspice/design.ngspice 
+.lib /foss/pdks/volare/gf180mcu/versions/0fe599b2afb6708d281543108caf8310912f54af/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_statistical
 
+**.include $::180MCU_MODELS/design.ngspice
+**.lib $::180MCU_MODELS/sm141064.ngspice typical
+**.lib $::180MCU_MODELS/sm141064.ngspice res_typical
+* .lib $::180MCU_MODELS/sm141064.ngspice res_statistical
 *.include $::180MCU_MODELS/design.ngspice
 *.lib $::180MCU_MODELS/sm141064.ngspice typical
 
@@ -300,8 +312,6 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {devices/gnd.sym} 1670 -80 0 0 {name=l5 lab=GND}
-C {devices/vdd.sym} 1670 -520 0 0 {name=l6 lab=VDD}
 C {devices/lab_pin.sym} 1590 -230 2 1 {name=p6 sig_type=std_logic lab=vcm}
 C {devices/lab_pin.sym} 1580 -400 0 0 {name=p7 sig_type=std_logic lab=vctrlp}
 C {devices/ammeter.sym} 1670 -490 0 0 {name=Vmeas2 savecurrent=true spice_ignore=0}
@@ -319,9 +329,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {devices/gnd.sym} 2030 -80 0 0 {name=l12 lab=GND}
 C {devices/isource.sym} 2030 -320 0 0 {name=I0 value=10u}
-C {devices/vdd.sym} 2030 -400 0 0 {name=l13 lab=VDD}
 C {devices/bsource.sym} 1810 -470 0 0 {name=B1 VAR=V FUNC="3.3 / ( 1 + exp(-10000 * V(Vout_stg2_rn,VDZ_RN)))" }
 C {devices/gnd.sym} 1810 -400 0 0 {name=l14 lab=GND}
 C {devices/lab_pin.sym} 1810 -530 2 0 {name=p8 sig_type=std_logic lab=vctrlp}
@@ -371,8 +379,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {devices/gnd.sym} 700 -140 0 0 {name=l16 lab=GND}
-C {devices/vdd.sym} 700 -580 0 0 {name=l17 lab=VDD}
+C {devices/vdd.sym} 1250 -600 0 0 {name=l17 lab=VDD}
 C {devices/ammeter.sym} 700 -550 0 0 {name=Vmeas3 savecurrent=true spice_ignore=0}
 C {devices/ngspice_probe.sym} 700 -400 0 1 {name=r1}
 C {devices/gnd.sym} 610 -460 0 0 {name=l18 lab=GND}
@@ -405,7 +412,6 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {devices/vdd.sym} 950 -550 0 0 {name=l19 lab=VDD}
 C {symbols/nfet_03v3.sym} 930 -180 0 0 {name=M16
 L=0.28u
 W=0.22u
@@ -420,10 +426,9 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {devices/gnd.sym} 950 -110 0 0 {name=l20 lab=GND}
 C {devices/ngspice_probe.sym} 950 -240 0 0 {name=r4}
 C {devices/ammeter.sym} 950 -520 0 0 {name=Vmeas4 savecurrent=true spice_ignore=0}
 C {devices/lab_pin.sym} 860 -180 2 1 {name=p3 sig_type=std_logic lab=vctrln}
 C {devices/lab_pin.sym} 850 -380 2 1 {name=p5 sig_type=std_logic lab=vcm}
 C {devices/lab_pin.sym} 950 -380 0 1 {name=p11 sig_type=std_logic lab=Vout_stg2_rp}
-C {devices/title.sym} 160 -30 0 0 {name=l21 author="Nithin Purushothama"}
+C {devices/title.sym} 840 -30 0 0 {name=l21 author="Nithin Purushothama"}

@@ -38,14 +38,25 @@ N 1120 -210 1120 -170 {lab=GND}
 N 1120 -290 1120 -270 {lab=#net5}
 N 1020 -350 1020 -320 {lab=VDD}
 N 1120 -400 1120 -350 {lab=VDD}
-N 1250 -270 1290 -270 {lab=GND}
-N 1250 -270 1250 -210 {lab=GND}
-N 1250 -210 1330 -210 {lab=GND}
-N 1330 -240 1330 -210 {lab=GND}
-N 1330 -300 1330 -270 {lab=#net6}
-N 1330 -390 1330 -370 {lab=VDD}
-N 1330 -310 1330 -300 {lab=#net6}
-N 1330 -210 1330 -170 {lab=GND}
+N 1260 -270 1300 -270 {lab=GND}
+N 1260 -270 1260 -210 {lab=GND}
+N 1260 -210 1340 -210 {lab=GND}
+N 1340 -240 1340 -210 {lab=GND}
+N 1340 -300 1340 -270 {lab=#net6}
+N 1340 -390 1340 -370 {lab=VDD}
+N 1340 -310 1340 -300 {lab=#net6}
+N 1340 -210 1340 -170 {lab=GND}
+N 610 -490 1340 -490 {lab=VDD}
+N 610 -170 610 -160 {lab=GND}
+N 610 -160 610 -120 {lab=GND}
+N 610 -120 1330 -120 {lab=GND}
+N 1340 -170 1340 -120 {lab=GND}
+N 860 -170 860 -130 {lab=GND}
+N 860 -130 860 -120 {lab=GND}
+N 1120 -170 1120 -120 {lab=GND}
+N 1120 -490 1120 -400 {lab=VDD}
+N 1340 -490 1340 -390 {lab=VDD}
+N 1330 -120 1340 -120 {lab=GND}
 C {symbols/nfet_03v3.sym} 590 -240 0 0 {name=M1
 L=0.5u
 W=5u
@@ -60,9 +71,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {devices/gnd.sym} 610 -170 0 0 {name=l1 lab=GND}
 C {devices/isource.sym} 610 -410 0 0 {name=I0 value=10u}
-C {devices/vdd.sym} 610 -490 0 0 {name=l2 lab=VDD}
 C {devices/vsource.sym} 310 -370 0 0 {name=V1 value=3.3 savecurrent=false}
 C {devices/gnd.sym} 310 -300 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 310 -450 0 0 {name=l4 lab=VDD}
@@ -150,9 +159,8 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {devices/vdd.sym} 860 -490 0 0 {name=l5 lab=VDD}
+C {devices/vdd.sym} 990 -490 0 0 {name=l5 lab=VDD}
 C {devices/isource.sym} 860 -250 0 0 {name=I1 value=10u}
-C {devices/gnd.sym} 860 -170 0 0 {name=l6 lab=GND}
 C {devices/ngspice_get_value.sym} 940 -460 0 0 {name=r2 node=@m.xm2.m0[gm]
 descr="gm2"}
 C {devices/ngspice_get_value.sym} 940 -430 0 0 {name=r3 node=@m.xm2.m0[gds]
@@ -181,15 +189,13 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {devices/gnd.sym} 1120 -170 0 0 {name=l7 lab=GND}
 C {devices/ngspice_probe.sym} 1020 -290 0 1 {name=r10}
 C {devices/ammeter.sym} 1120 -320 0 0 {name=Vmeas2 savecurrent=true spice_ignore=0}
 C {devices/ngspice_get_value.sym} 1030 -360 0 0 {name=r11 node=v(@m.xm3.m0[vth])
 descr="vth3"}
-C {devices/vdd.sym} 1120 -400 0 0 {name=l8 lab=VDD}
 C {devices/ngspice_get_value.sym} 1030 -390 0 0 {name=r12 node=v(@m.xm3.m0[vds])
 descr="vds1"}
-C {symbols/pfet_03v3.sym} 1310 -270 0 0 {name=M4
+C {symbols/pfet_03v3.sym} 1320 -270 0 0 {name=M4
 L=0.5u
 W=15.375u
 nf=1
@@ -203,12 +209,11 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {devices/vdd.sym} 1330 -390 0 0 {name=l9 lab=VDD}
-C {devices/ammeter.sym} 1330 -340 0 0 {name=Vmeas3 savecurrent=true spice_ignore=0}
-C {devices/ngspice_probe.sym} 1250 -230 0 1 {name=r14}
-C {devices/gnd.sym} 1330 -170 0 0 {name=l10 lab=GND}
-C {devices/ngspice_get_value.sym} 1230 -310 0 0 {name=r15 node=v(@m.xm4.m0[vth])
+C {devices/ammeter.sym} 1340 -340 0 0 {name=Vmeas3 savecurrent=true spice_ignore=0}
+C {devices/ngspice_probe.sym} 1260 -230 0 1 {name=r14}
+C {devices/gnd.sym} 970 -120 0 0 {name=l10 lab=GND}
+C {devices/ngspice_get_value.sym} 1240 -310 0 0 {name=r15 node=v(@m.xm4.m0[vth])
 descr="vth4"}
-C {devices/ngspice_get_value.sym} 1230 -340 0 0 {name=r16 node=v(@m.xm4.m0[vds])
+C {devices/ngspice_get_value.sym} 1240 -340 0 0 {name=r16 node=v(@m.xm4.m0[vds])
 descr="vds4"}
 C {devices/title.sym} 160 -30 0 0 {name=l11 author="Nithin Purushothama"}
