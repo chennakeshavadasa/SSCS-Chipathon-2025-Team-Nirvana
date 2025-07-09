@@ -128,3 +128,5 @@ Based on the work by Hershberg et al., we explore how deadzone tuning affects th
 > *IEEE Journal of Solid-State Circuits*, vol. 54, no. 3, pp. 646–658, March 2019.  
 > [DOI: 10.1109/JSSC.2018.2889680](https://doi.org/10.1109/JSSC.2018.2889680)
 
+## Acknowledgement 
+I would like to express my sincere gratitude to **Dr. Praveen Kumar Venkatachala** for his constant mentorship and guidance throughout this project.
