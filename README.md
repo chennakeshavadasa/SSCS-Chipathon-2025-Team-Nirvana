@@ -82,20 +82,19 @@ A pipelined ADC architecture leveraging discrete-time operation and ring amplifi
   <img src="https://github.com/user-attachments/assets/10b8f2e8-c285-4ea6-bb7e-216b159cc5ff" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
 
+- Stage 1 MDAC
 <div align="center">
   <img src="https://github.com/user-attachments/assets/83d97ddb-7b1b-4b76-bcf0-51ca56521398" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
 
+- Stage 2-4 MDAC
 <div align="center">
   <img src="https://github.com/user-attachments/assets/2c992243-84f7-4293-9957-e8dc80d0ba30" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
 
+- Stage 5-6 MDAC
 <div align="center">
   <img src="https://github.com/user-attachments/assets/229b39be-7e93-44a5-a0e1-ae7278fe69fb" alt="Screenshot_2025-06-22_171527" width="600"/>
-</div>
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/39a85a95-ef50-46e1-af61-2f8291fe316d" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
 
 - The Fully differential ampifier can also be replaced with Fully differential Ring Amplifier
