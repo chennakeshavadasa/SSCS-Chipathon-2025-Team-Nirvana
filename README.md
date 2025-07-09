@@ -78,9 +78,20 @@ By bridging theoretical concepts with practical design, our Mosbius Chip makes d
 
 - Ring Amplifier based Filters
 
-- Ring Amplifier based LDO
-  - ![RAMP_LDO_chipathon](https://github.com/user-attachments/assets/eda37edc-a826-4efa-adf8-91117612d4c8)
-  - Based on P. K. Venkatachala et al., "Process Invariant Biasing of Ring Amplifiers Using Deadzone Regulation Circuit," 2018 IEEE International Symposium on Circuits and Systems (ISCAS), Florence, Italy, 2018, pp. 1-5, doi: 10.1109/ISCAS.2018.8351242.
+-  Ring Amplifier Based LDO
+
+An LDO architecture leveraging a ring amplifier core with deadzone regulation for bias stability.
+
+#### Chipathon Implementation
+
+![RAMP_LDO_chipathon](https://github.com/user-attachments/assets/eda37edc-a826-4efa-adf8-91117612d4c8)
+
+#### Reference
+
+> P. K. Venkatachala, A. S. Madhukumar, and B. P. Hershberg,  
+> “Process Invariant Biasing of Ring Amplifiers Using Deadzone Regulation Circuit,”  
+> *2018 IEEE International Symposium on Circuits and Systems (ISCAS)*, Florence, Italy, 2018, pp. 1–5.  
+> [DOI: 10.1109/ISCAS.2018.8351242](https://doi.org/10.1109/ISCAS.2018.8351242)
 
 -  Understanding the Behaviour of Ring Amplifier
 
