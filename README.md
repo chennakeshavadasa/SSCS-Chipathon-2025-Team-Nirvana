@@ -181,7 +181,7 @@ Based on the work by Hershberg et al., we explore how deadzone tuning affects th
 #### Settling Across Various Deadzone Values
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/cf908b97-deed-4c79-b457-2331caf2f9a5" alt="Screenshot_2025-06-22_171527" width="600"/>
+  <img src="https://github.com/user-attachments/assets/3d8af2e7-57ec-4a79-b766-f27a47a113345" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
 
 #### Open-Loop Gain vs V<sub>OUT</sub> Across Deadzone
