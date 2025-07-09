@@ -73,6 +73,11 @@ By bridging theoretical concepts with practical design, our Mosbius Chip makes d
 # User Cases
 
 - Discrete-time pipeline ADC
+  
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/83d97ddb-7b1b-4b76-bcf0-51ca56521398" alt="Screenshot_2025-06-22_171527" width="600"/>
+</div>
+
 
 - Two-step SAR ADCs
 
@@ -84,7 +89,9 @@ An LDO architecture with a ring amplifier based LDO which doesnt need any freque
 
 ####  Implementation
 
-![RAMP_LDO_chipathon](https://github.com/user-attachments/assets/eda37edc-a826-4efa-adf8-91117612d4c8)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/eda37edc-a826-4efa-adf8-91117612d4c8" alt="Screenshot_2025-06-22_171527" width="600"/>
+</div>
 
 #### Reference
 
