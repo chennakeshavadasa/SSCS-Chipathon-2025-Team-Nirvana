@@ -70,5 +70,15 @@ By bridging theoretical concepts with practical design, our Mosbius Chip makes d
 
 ---
 
+# User Cases
 
+- Discrete-time pipeline ADC
+
+- Two-step SAR ADCs
+
+- Ring Amplifier based Filters
+
+- Ring Amplifier based LDO
+
+- Understanding the behaviour of RIng amplifier
 
