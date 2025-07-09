@@ -48,6 +48,8 @@ By bridging theoretical concepts with practical design, our Mosbius Chip makes d
   <img src="https://github.com/user-attachments/assets/4a06a853-9d20-465e-aee2-c2d34ddffeee" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
 
+![image](https://github.com/user-attachments/assets/c726fec0-d34c-4653-8ce3-b20450774148)
+
 ## Pin-Out Diagram
 
 | Pin Name       | Direction | Type        | Description                                                                 |
