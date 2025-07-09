@@ -90,6 +90,10 @@ A pipelined ADC architecture leveraging discrete-time operation and ring amplifi
   <img src="https://github.com/user-attachments/assets/229b39be-7e93-44a5-a0e1-ae7278fe69fb" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/39a85a95-ef50-46e1-af61-2f8291fe316d" alt="Screenshot_2025-06-22_171527" width="600"/>
+</div>
+
 #### Reference
 
 > B. Hershberg, S. Weaver, K. Sobue, S. Takeuchi, K. Hamashita and U.-K. Moon,  
