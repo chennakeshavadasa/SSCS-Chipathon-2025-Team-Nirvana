@@ -117,7 +117,7 @@ A pipelined ADC architecture leveraging discrete-time operation and ring amplifi
   <img src="https://github.com/user-attachments/assets/d2043116-2fe8-4f03-ad20-b9a0cf74820a" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
 
--  Discrete-time integ
+-  Discrete-time integtor
 <div align="center">
   <img src="https://github.com/user-attachments/assets/48091541-6ab7-469e-972f-f898f51ec9f1" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
