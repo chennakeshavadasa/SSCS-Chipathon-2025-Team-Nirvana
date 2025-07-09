@@ -112,7 +112,7 @@ A pipelined ADC architecture leveraging discrete-time operation and ring amplifi
 This section demonstrates the use of a **Ring Amplifier** as a residue amplifier in a two-step Successive Approximation Register (SAR) ADC architecture.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/3bdc786c-550f-4f41-bd1b-f19f65795092" alt="Two-Step SAR ADC Block Diagram" width="600"/>
+  <img src="https://github.com/user-attachments/assets/3b47dfbb-7342-4c47-8af7-f9784aaee666" alt="Two-Step SAR ADC Block Diagram" width="600"/>
 </div>
 
 The two-step SAR ADC shown above consists of a 9-bit first stage (STG1) and a 13-bit second stage (STG2), with an interstage gain of 64× provided by the **residue amplifier (RA)** implemented using a ring amplifier. The first 4 MSBs of STG1 are resolved by a coarse flash ADC, enabling efficient high-resolution conversion with reduced power.
