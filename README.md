@@ -109,6 +109,10 @@ A pipelined ADC architecture leveraging discrete-time operation and ring amplifi
 
 ## Two-step SAR ADCs
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/3bdc786c-550f-4f41-bd1b-f19f65795092" alt="Differential Unity-Gain Sampler" width="600"/>
+</div>
+
 ---
 
 ## Ring Amplifier Based Switched-Capacitor Amplifiers and Filters
