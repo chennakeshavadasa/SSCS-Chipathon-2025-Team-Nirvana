@@ -98,7 +98,7 @@ A pipelined ADC architecture leveraging discrete-time operation and ring amplifi
 > [DOI: 10.1109/JSSC.2012.2217865](https://doi.org/10.1109/JSSC.2012.2217865)
 
 
-- Two-step SAR ADCs
+## Two-step SAR ADCs
 
 ## Ring Amplifier Based Switched-Capacitor Amplifiers and Filters
 
