@@ -6,7 +6,7 @@ Mosbius work by team **Nirvana** for Chipathon 2025
 <h3><strong>Project Introduction: Reconfigurable Fully Differential Ring Amplifier with Deadzone Regulation Circuit for Educational and RF-Mixed-Signal Applications</strong></h3>
 
 <p>
-Dynamic amplifiers, particularly <em>Ring Amplifiers</em>, have emerged as compelling alternatives to traditional small-signal operational amplifiers due to their high-speed and energy-efficient characteristics. Originally proposed by <strong>Benjamin Hershberg</strong> at <strong>Oregon State University (OSU)</strong>, ring amplifiers offer an innovative solution for high-performance analog blocks, especially in pipelined ADCs and filter circuits.
+Dynamic amplifiers, particularly <em>Ring Amplifiers(RAMP)</em>, have emerged as compelling alternatives to traditional small-signal operational amplifiers due to their high-speed and energy-efficient characteristics. Originally proposed by <strong>Benjamin Hershberg</strong> at <strong>Oregon State University (OSU)</strong>, ring amplifiers offer an innovative solution for high-performance analog blocks, especially in pipelined ADCs and filter circuits.
 </p>
 
 <p>
@@ -102,22 +102,22 @@ A pipelined ADC architecture leveraging discrete-time operation and ring amplifi
 
 ## Ring Amplifier based Switch Cap Amplifiers and Filters
 
-- Differential realization of unity-gain sampler
+- Differential realization of unity-gain sampler realised with RAMP
 <div align="center">
   <img src="https://github.com/user-attachments/assets/b847ff1e-d291-4cab-8e97-de6940252795" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
 
-- Noninverting amplifier
+- Noninverting amplifier realised with RAMP
 <div align="center">
   <img src="https://github.com/user-attachments/assets/ad677013-4c59-4c12-bb17-d2f6b7c65124" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
 
-- Differential realization of noninverting amplifier
+- Differential realization of noninverting amplifier realised with RAMP
 <div align="center">
   <img src="https://github.com/user-attachments/assets/d2043116-2fe8-4f03-ad20-b9a0cf74820a" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
 
--  Discrete-time integtor
+-  Discrete-time integtor realised with RAMP
 <div align="center">
   <img src="https://github.com/user-attachments/assets/48091541-6ab7-469e-972f-f898f51ec9f1" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
