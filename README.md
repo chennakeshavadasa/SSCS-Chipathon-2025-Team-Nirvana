@@ -132,7 +132,7 @@ Exploring the use of Ring Amplifiers (RAMPs) in Switch Cap circuits and analog f
   <img src="https://github.com/user-attachments/assets/48091541-6ab7-469e-972f-f898f51ec9f1" alt="Discrete-Time Integrator" width="600"/>
 </div>
 
-### 📚 References
+### References
 
 > B. Razavi,  
 > *Design of Analog Integrated Circuits*, Chapter 12: Switched-Capacitor Circuits,  
