@@ -11,6 +11,29 @@ Mosbius work by team Nirvana for Chipathon 2025
 
 - Additionally, users can manually vary the deadzone to explore the amplifier’s behavior across different deadzone widths. This tunability makes the implementation highly versatile, supporting a wide range of use cases including discrete-time pipeline ADCs, two-step SAR ADCs, Analog filters, LDOs, and also serving as a platform to study the behavior of dynamic amplifiers.
 
+<div align="justify">
+
+<h3><strong>Project Introduction: Reconfigurable Fully Differential Ring Amplifier with Deadzone Regulation Circuit for Educational and RF-Mixed-Signal Applications</strong></h3>
+
+<p>
+Dynamic amplifiers, particularly <em>Ring Amplifiers</em>, have emerged as compelling alternatives to traditional small-signal operational amplifiers due to their high-speed and energy-efficient characteristics. Originally proposed by <strong>Benjamin Hershberg</strong> at <strong>Oregon State University (OSU)</strong>, ring amplifiers offer an innovative solution for high-performance analog blocks, especially in pipelined ADCs and filter circuits.
+</p>
+
+<p>
+Our project aims to design and develop a <strong>reconfigurable ring amplifier</strong> optimized for <strong>educational use and mixed-signal system integration</strong>. The central focus is on <strong>enabling user-driven exploration and understanding</strong> of dynamic amplifier behavior—including large-signal dynamics, deadzone effects, and the transition into small-signal operation.
+</p>
+
+<p>
+To support this, we incorporate a <strong>dedicated deadzone regulation circuit</strong>, based on the work of <strong>Dr. Praveen Kumar Venkatachala (Ph.D., OSU)</strong>. This circuit enables <strong>fine-grained control</strong> over the ring amplifier’s transition between nonlinear and linear operating regions. It provides a <strong>PVT-robust mechanism</strong> to configure the deadzone required for placing the ring amplifier into small-signal mode.
+</p>
+
+<p>
+Additionally, users can <strong>manually vary the deadzone</strong> to explore the amplifier’s behavior across different deadzone widths. This tunability makes the implementation highly versatile, supporting a wide range of use cases including <strong>discrete-time pipeline ADCs</strong>, <strong>two-step SAR ADCs</strong>, <strong>analog filters</strong>, <strong>LDOs</strong>, and also serving as a platform to <strong>study the behavior of dynamic amplifiers</strong>.
+</p>
+
+</div>
+
+
 By bridging theoretical concepts with practical design, our Mosbius Chip makes dynamic amplifier behavior more accessible for learning analog and mixed-signal design.
 
 ##  Team
