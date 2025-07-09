@@ -209,12 +209,22 @@ Based on the work by Hershberg et al., we explore how deadzone tuning affects th
   <img src="https://github.com/user-attachments/assets/49abb2d8-47de-49c5-8507-076d5baf0975" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
 
+####  Ringamp transient response for Voltage step
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/776e7507-ba8c-4c63-aa25-536922c0908a" alt="Screenshot_2025-06-22_171527" width="600"/>
+</div>
+
 #### Reference
 
 > J. Lagos, B. P. Hershberg, E. Martens, P. Wambacq and J. Craninckx,  
 > “A 1-GS/s, 12-b, Single-Channel Pipelined ADC With Dead-Zone-Degenerated Ring Amplifiers,”  
 > *IEEE Journal of Solid-State Circuits*, vol. 54, no. 3, pp. 646–658, March 2019.  
 > [DOI: 10.1109/JSSC.2018.2889680](https://doi.org/10.1109/JSSC.2018.2889680)
+
+> Praveen Kumar Venkatachala,  
+> *Design Considerations and Circuit Techniques for Robust Ring-Amplifiers*,  
+> Ph.D. Dissertation, Oregon State University, 2019.
 
 ## Acknowledgement 
 I would like to express my sincere gratitude to **Dr. Praveen Kumar Venkatachala** for his constant mentorship and guidance throughout this project.
