@@ -24,7 +24,7 @@ Additionally, users can <strong>manually vary the deadzone</strong> to explore t
 </div>
 
 
-By bridging theoretical concepts with practical design, our Mosbius Chip makes dynamic amplifier behavior more accessible for learning analog and mixed-signal design.
+By this work we intend to bridge theoretical concepts with practical design, our Mosbius Chip makes dynamic amplifier behavior more accessible for learning analog and mixed-signal design.
 
 ##  Team
 
