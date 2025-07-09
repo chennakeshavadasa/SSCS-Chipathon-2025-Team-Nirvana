@@ -100,27 +100,49 @@ A pipelined ADC architecture leveraging discrete-time operation and ring amplifi
 
 - Two-step SAR ADCs
 
-## Ring Amplifier based Switch Cap Amplifiers and Filters
+## Ring Amplifier Based Switched-Capacitor Amplifiers and Filters
 
-- Differential realization of unity-gain sampler realised with RAMP
+Exploring the use of Ring Amplifiers (RAMPs) in Switch Cap circuits and analog filters.
+
+---
+
+### Differential Unity-Gain Sampler Using RAMP
+
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/b847ff1e-d291-4cab-8e97-de6940252795" alt="Screenshot_2025-06-22_171527" width="600"/>
+  <img src="https://github.com/user-attachments/assets/b847ff1e-d291-4cab-8e97-de6940252795" alt="Differential Unity-Gain Sampler" width="600"/>
 </div>
 
-- Noninverting amplifier realised with RAMP
+---
+
+### Non-Inverting Amplifier Using RAMP
+
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/ad677013-4c59-4c12-bb17-d2f6b7c65124" alt="Screenshot_2025-06-22_171527" width="600"/>
+  <img src="https://github.com/user-attachments/assets/ad677013-4c59-4c12-bb17-d2f6b7c65124" alt="Non-Inverting Amplifier" width="600"/>
 </div>
 
-- Differential realization of noninverting amplifier realised with RAMP
+---
+
+### Differential Non-Inverting Amplifier Using RAMP
+
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/d2043116-2fe8-4f03-ad20-b9a0cf74820a" alt="Screenshot_2025-06-22_171527" width="600"/>
+  <img src="https://github.com/user-attachments/assets/d2043116-2fe8-4f03-ad20-b9a0cf74820a" alt="Differential Non-Inverting Amplifier" width="600"/>
 </div>
 
--  Discrete-time integtor realised with RAMP
+---
+
+### Discrete-Time Integrator Using RAMP
+
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/48091541-6ab7-469e-972f-f898f51ec9f1" alt="Screenshot_2025-06-22_171527" width="600"/>
+  <img src="https://github.com/user-attachments/assets/48091541-6ab7-469e-972f-f898f51ec9f1" alt="Discrete-Time Integrator" width="600"/>
 </div>
+
+---
+
+### 📚 References
+
+> B. Razavi,  
+> *Design of Analog Integrated Circuits*, Chapter 12: Switched-Capacitor Circuits,  
+> [UCLA Course Notes (PDF)](https://www.seas.ucla.edu/brweb/teaching/AIC_Ch12.pdf)
 
 ##  Ring Amplifier Based LDO
 
