@@ -100,7 +100,17 @@ A pipelined ADC architecture leveraging discrete-time operation and ring amplifi
 
 - Two-step SAR ADCs
 
-- Ring Amplifier based Switch Cap Amplifiers and Filters
+## Ring Amplifier based Switch Cap Amplifiers and Filters
+
+- Differential realization of unity-gain sampler
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/b847ff1e-d291-4cab-8e97-de6940252795" alt="Screenshot_2025-06-22_171527" width="600"/>
+</div>
+
+- Noninverting amplifier
+<div align="center">
+  <img src=https://github.com/user-attachments/assets/ad677013-4c59-4c12-bb17-d2f6b7c65124" alt="Screenshot_2025-06-22_171527" width="600"/>
+</div>
 
 ##  Ring Amplifier Based LDO
 
