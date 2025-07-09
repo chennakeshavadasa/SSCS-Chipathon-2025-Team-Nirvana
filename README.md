@@ -74,7 +74,7 @@ By bridging theoretical concepts with practical design, our Mosbius Chip makes d
 
 ## Discrete-Time Pipeline ADC
 
-A pipelined ADC architecture leveraging discrete-time operation and ring amplifiers for high-speed, energy-efficient performance.
+A pipelined ADC architecture leveraging discrete-time operation and ring amplifiers for high-speed, energy-efficient performance can be implemented. This is based on the work by Benjamin Hershberg et al.,
 
 #### Architecture Overview
 
@@ -100,9 +100,19 @@ An LDO architecture with a ring amplifier based LDO which doesnt need any freque
 
 ####  Implementation
 
+
 <div align="center">
   <img src="https://github.com/user-attachments/assets/eda37edc-a826-4efa-adf8-91117612d4c8" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/2c992243-84f7-4293-9957-e8dc80d0ba30" alt="Screenshot_2025-06-22_171527" width="600"/>
+</div>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/229b39be-7e93-44a5-a0e1-ae7278fe69fb" alt="Screenshot_2025-06-22_171527" width="600"/>
+</div>
+
 
 #### Reference
 
