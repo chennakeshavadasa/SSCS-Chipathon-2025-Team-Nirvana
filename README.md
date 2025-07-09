@@ -72,11 +72,22 @@ By bridging theoretical concepts with practical design, our Mosbius Chip makes d
 
 # User Cases
 
-- Discrete-time pipeline ADC
-  
+## Discrete-Time Pipeline ADC
+
+A pipelined ADC architecture leveraging discrete-time operation and ring amplifiers for high-speed, energy-efficient performance.
+
+#### Architecture Overview
+
 <div align="center">
   <img src="https://github.com/user-attachments/assets/83d97ddb-7b1b-4b76-bcf0-51ca56521398" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
+
+#### Reference
+
+> B. Hershberg, S. Weaver, K. Sobue, S. Takeuchi, K. Hamashita and U.-K. Moon,  
+> “Ring Amplifiers for Switched Capacitor Circuits,”  
+> *IEEE Journal of Solid-State Circuits*, vol. 47, no. 12, pp. 2928–2942, Dec. 2012.  
+> [DOI: 10.1109/JSSC.2012.2217865](https://doi.org/10.1109/JSSC.2012.2217865)
 
 
 - Two-step SAR ADCs
