@@ -111,7 +111,16 @@ A pipelined ADC architecture leveraging discrete-time operation and ring amplifi
 <div align="center">
   <img src="https://github.com/user-attachments/assets/ad677013-4c59-4c12-bb17-d2f6b7c65124" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
-![Screenshot 2025-07-09 145303](https://github.com/user-attachments/assets/0e95c30c-8de8-4a27-80d8-bf62ff69b077)
+
+- Differential realization of noninverting amplifier
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/d2043116-2fe8-4f03-ad20-b9a0cf74820a" alt="Screenshot_2025-06-22_171527" width="600"/>
+</div>
+
+-  Discrete-time integ
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/48091541-6ab7-469e-972f-f898f51ec9f1" alt="Screenshot_2025-06-22_171527" width="600"/>
+</div>
 
 ##  Ring Amplifier Based LDO
 
