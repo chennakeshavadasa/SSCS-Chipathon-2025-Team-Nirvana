@@ -209,6 +209,8 @@ Based on the work by Hershberg et al., we explore how deadzone tuning affects th
   <img src="https://github.com/user-attachments/assets/49abb2d8-47de-49c5-8507-076d5baf0975" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
 
+Note: The values here are not same. Its just for reference.
+
 ####  Ringamp transient response for Voltage step
 
 <div align="center">
