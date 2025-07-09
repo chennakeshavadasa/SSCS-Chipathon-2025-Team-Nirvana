@@ -82,13 +82,30 @@ By bridging theoretical concepts with practical design, our Mosbius Chip makes d
   - ![RAMP_LDO_chipathon](https://github.com/user-attachments/assets/eda37edc-a826-4efa-adf8-91117612d4c8)
   - Based on P. K. Venkatachala et al., "Process Invariant Biasing of Ring Amplifiers Using Deadzone Regulation Circuit," 2018 IEEE International Symposium on Circuits and Systems (ISCAS), Florence, Italy, 2018, pp. 1-5, doi: 10.1109/ISCAS.2018.8351242.
 
-- Understanding the behaviour of Ring amplifier
-  - ![Ring-amp-understanding_Ring-amp-project](https://github.com/user-attachments/assets/932f3159-1b74-42ee-a06a-3a72a1d1721a)
-    - Settling across various deadzone
-      - ![Screenshot 2025-07-09 113048](https://github.com/user-attachments/assets/cf908b97-deed-4c79-b457-2331caf2f9a5)
-    - Open Loop Gain vs Vout across Deadzone
-      -  ![Screenshot 2025-07-09 112927](https://github.com/user-attachments/assets/b64a5b5c-37f0-421d-ba83-6f9d9a1ad4b7)
-    - Open Loop gain vs frequency across deadzone
-      - ![image](https://github.com/user-attachments/assets/07b91847-b0a7-465f-802e-a5652d14fd26)
-  - Based on J. Lagos, B. P. Hershberg, E. Martens, P. Wambacq and J. Craninckx, "A 1-GS/s, 12-b, Single-Channel Pipelined ADC With Dead-Zone-Degenerated Ring Amplifiers," in IEEE Journal of Solid-State Circuits, vol. 54, no. 3, pp. 646-658, March 2019, doi: 10.1109/JSSC.2018.2889680.
+-  Understanding the Behaviour of Ring Amplifier
+
+Based on the work by Hershberg et al., we explore how deadzone tuning affects the performance of the Ring Amplifier.
+
+#### Reference Architecture
+
+![Ring-amp-understanding_Ring-amp-project](https://github.com/user-attachments/assets/932f3159-1b74-42ee-a06a-3a72a1d1721a)
+
+#### Settling Across Various Deadzone Values
+
+![Screenshot 2025-07-09 113048](https://github.com/user-attachments/assets/cf908b97-deed-4c79-b457-2331caf2f9a5)
+
+#### Open-Loop Gain vs V<sub>OUT</sub> Across Deadzone
+
+![Screenshot 2025-07-09 112927](https://github.com/user-attachments/assets/b64a5b5c-37f0-421d-ba83-6f9d9a1ad4b7)
+
+#### Open-Loop Gain vs Frequency Across Deadzone
+
+![image](https://github.com/user-attachments/assets/07b91847-b0a7-465f-802e-a5652d14fd26)
+
+#### Reference
+
+> J. Lagos, B. P. Hershberg, E. Martens, P. Wambacq and J. Craninckx,  
+> “A 1-GS/s, 12-b, Single-Channel Pipelined ADC With Dead-Zone-Degenerated Ring Amplifiers,”  
+> *IEEE Journal of Solid-State Circuits*, vol. 54, no. 3, pp. 646–658, March 2019.  
+> [DOI: 10.1109/JSSC.2018.2889680](https://doi.org/10.1109/JSSC.2018.2889680)
 
