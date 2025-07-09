@@ -142,7 +142,7 @@ Exploring the use of Ring Amplifiers (RAMPs) in Switch Cap circuits and analog f
 
 ##  Ring Amplifier Based LDO
 
-An LDO architecture with a ring amplifier based LDO which doesnt need any frequency compensation with deadzone regulation circuit. This is based on the work by P. K. Venkatachala et al.,
+An LDO architecture using a ring amplifier with deadzone regulation is presented, which eliminates the need for traditional frequency compensation. This design is based on the work by P. K. Venkatachala et al. The RAMP-based LDO is more power-efficient compared to conventional small-signal amplifier-based LDOs. This efficiency arises from the ring amplifier’s unique settling behavior, which occurs in three phases: RC settling, large-signal settling, and small-signal settling—enabling faster operation and reduced power consumption.
 
 ####  Implementation
 
@@ -161,7 +161,7 @@ An LDO architecture with a ring amplifier based LDO which doesnt need any freque
 
 ##  Understanding the Behaviour of Ring Amplifier
 
-Based on the work by Hershberg et al., we explore how deadzone tuning affects the performance of the Ring Amplifier.
+Based on the work by Hershberg et al., we explore how deadzone tuning affects the performance of the Ring Amplifier and investigate its dynamic behavior across a full input voltage step.
 
 #### Implementation
 
