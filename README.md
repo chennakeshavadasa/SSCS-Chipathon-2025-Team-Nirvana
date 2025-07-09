@@ -193,7 +193,7 @@ Based on the work by Hershberg et al., we explore how deadzone tuning affects th
 #### Open-Loop Gain vs Frequency Across Deadzone
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/07b91847-b0a7-465f-802e-a5652d14fd26" alt="Screenshot_2025-06-22_171527" width="600"/>
+  <img src="https://github.com/user-attachments/assets/49abb2d8-47de-49c5-8507-076d5baf0975" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
 
 #### Reference
