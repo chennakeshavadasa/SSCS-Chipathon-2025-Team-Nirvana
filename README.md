@@ -100,14 +100,13 @@ A pipelined ADC architecture leveraging discrete-time operation and ring amplifi
 
 - Two-step SAR ADCs
 
-- Ring Amplifier based Filters
+- Ring Amplifier based Switch Cap Amplifiers and Filters
 
 ##  Ring Amplifier Based LDO
 
 An LDO architecture with a ring amplifier based LDO which doesnt need any frequency compensation with deadzone regulation circuit. This is based on the work by P. K. Venkatachala et al.,
 
 ####  Implementation
-
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/eda37edc-a826-4efa-adf8-91117612d4c8" alt="Screenshot_2025-06-22_171527" width="600"/>
