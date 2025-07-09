@@ -109,8 +109,9 @@ A pipelined ADC architecture leveraging discrete-time operation and ring amplifi
 
 - Noninverting amplifier
 <div align="center">
-  <img src=https://github.com/user-attachments/assets/ad677013-4c59-4c12-bb17-d2f6b7c65124" alt="Screenshot_2025-06-22_171527" width="600"/>
+  <img src="https://github.com/user-attachments/assets/ad677013-4c59-4c12-bb17-d2f6b7c65124" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
+![Screenshot 2025-07-09 145303](https://github.com/user-attachments/assets/0e95c30c-8de8-4a27-80d8-bf62ff69b077)
 
 ##  Ring Amplifier Based LDO
 
