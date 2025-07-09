@@ -95,7 +95,7 @@ A pipelined ADC architecture leveraging discrete-time operation and ring amplifi
   <img src="https://github.com/user-attachments/assets/229b39be-7e93-44a5-a0e1-ae7278fe69fb" alt="Screenshot_2025-06-22_171527" width="600"/>
 </div>
 
-- The Fully differential ampifier and single ended can also be replaced with our fully differential Ring Amplifier
+- The Fully differential ampifier and single ended amplifier can also be replaced with our fully differential Ring Amplifier
 
 #### Reference
 
