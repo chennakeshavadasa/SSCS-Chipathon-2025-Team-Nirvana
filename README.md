@@ -99,19 +99,27 @@ Based on the work by Hershberg et al., we explore how deadzone tuning affects th
 
 #### Reference Architecture
 
-![Ring-amp-understanding_Ring-amp-project](https://github.com/user-attachments/assets/932f3159-1b74-42ee-a06a-3a72a1d1721a)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/932f3159-1b74-42ee-a06a-3a72a1d1721a" alt="Screenshot_2025-06-22_171527" width="600"/>
+</div>
 
 #### Settling Across Various Deadzone Values
 
-![Screenshot 2025-07-09 113048](https://github.com/user-attachments/assets/cf908b97-deed-4c79-b457-2331caf2f9a5)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/cf908b97-deed-4c79-b457-2331caf2f9a5" alt="Screenshot_2025-06-22_171527" width="600"/>
+</div>
 
 #### Open-Loop Gain vs V<sub>OUT</sub> Across Deadzone
 
-![Screenshot 2025-07-09 112927](https://github.com/user-attachments/assets/b64a5b5c-37f0-421d-ba83-6f9d9a1ad4b7)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/b64a5b5c-37f0-421d-ba83-6f9d9a1ad4b7" alt="Screenshot_2025-06-22_171527" width="600"/>
+</div>
 
 #### Open-Loop Gain vs Frequency Across Deadzone
 
-![image](https://github.com/user-attachments/assets/07b91847-b0a7-465f-802e-a5652d14fd26)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/07b91847-b0a7-465f-802e-a5652d14fd26" alt="Screenshot_2025-06-22_171527" width="600"/>
+</div>
 
 #### Reference
 
