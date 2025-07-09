@@ -78,7 +78,7 @@ By bridging theoretical concepts with practical design, our Mosbius Chip makes d
 
 - Ring Amplifier based Filters
 
--  Ring Amplifier Based LDO
+##  Ring Amplifier Based LDO
 
 An LDO architecture leveraging a ring amplifier core with deadzone regulation for bias stability.
 
@@ -93,7 +93,7 @@ An LDO architecture leveraging a ring amplifier core with deadzone regulation fo
 > *2018 IEEE International Symposium on Circuits and Systems (ISCAS)*, Florence, Italy, 2018, pp. 1–5.  
 > [DOI: 10.1109/ISCAS.2018.8351242](https://doi.org/10.1109/ISCAS.2018.8351242)
 
--  Understanding the Behaviour of Ring Amplifier
+##  Understanding the Behaviour of Ring Amplifier
 
 Based on the work by Hershberg et al., we explore how deadzone tuning affects the performance of the Ring Amplifier.
 
