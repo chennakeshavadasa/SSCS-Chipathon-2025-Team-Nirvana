@@ -80,9 +80,9 @@ By bridging theoretical concepts with practical design, our Mosbius Chip makes d
 
 ##  Ring Amplifier Based LDO
 
-An LDO architecture leveraging a ring amplifier core with deadzone regulation for bias stability.
+An LDO architecture with a ring amplifier based LDO which doesnt need any frequency compensation with deadzone regulation circuit. This is based on the work by P. K. Venkatachala et al.,
 
-#### Chipathon Implementation
+####  Implementation
 
 ![RAMP_LDO_chipathon](https://github.com/user-attachments/assets/eda37edc-a826-4efa-adf8-91117612d4c8)
 
@@ -97,7 +97,7 @@ An LDO architecture leveraging a ring amplifier core with deadzone regulation fo
 
 Based on the work by Hershberg et al., we explore how deadzone tuning affects the performance of the Ring Amplifier.
 
-#### Reference Architecture
+#### Implementation
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/932f3159-1b74-42ee-a06a-3a72a1d1721a" alt="Screenshot_2025-06-22_171527" width="600"/>
