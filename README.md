@@ -106,7 +106,7 @@ A pipelined ADC architecture leveraging discrete-time operation and ring amplifi
 
 ## Ring Amplifier Based Switched-Capacitor Amplifiers and Filters
 
-Exploring the use of Ring Amplifiers (RAMPs) in Switch Cap circuits and analog filters.
+Exploring the use of Fully differential Ring amplifier, which provides the benefits of high gain, fast slew based charging and an almost rail-to-rail output swing. We implement a switched-capacitor (SC) inter-stage residue amplifier that uses this new fully differential ring amplifier to give accurate amplification.
 
 ### Differential Unity-Gain Sampler Using RAMP
 
