@@ -119,7 +119,7 @@ The two-step SAR ADC shown above consists of a 9-bit first stage (STG1) and a 13
 
 #### Reference
 
-> A. ElShater, K. Cho, D. Jeon, and S. Pamarti,  
+> Ahmed ElShater, Praveen Kumar Venkatachala, Calvin Yoji Lee, Jason Muhlestein, Spencer Leuenberger, and Kazuki Sobue,  
 > “A 10-mW 16-b 15-MS/s Two-Step SAR ADC With 95-dB DR Using Dual-Deadzone Ring Amplifier,”  
 > *IEEE Journal of Solid-State Circuits*, vol. 54, no. 12, pp. 3410–3420, Dec. 2019.  
 > [DOI: 10.1109/JSSC.2019.2943935](https://doi.org/10.1109/JSSC.2019.2943935)
