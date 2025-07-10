@@ -174,10 +174,15 @@ An LDO architecture using a ring amplifier with deadzone regulation is presented
 
 #### Reference
 
-> P. K. Venkatachala, A. S. Madhukumar, and B. P. Hershberg,  
+> Praveen Kumar Venkatachala, Spencer Leuenberger, Ahmed ElShater, Calvin Lee, Yang Xu, and Bohui Xiao,  
 > “Process Invariant Biasing of Ring Amplifiers Using Deadzone Regulation Circuit,”  
-> *2018 IEEE International Symposium on Circuits and Systems (ISCAS)*, Florence, Italy, 2018, pp. 1–5.  
+> *Proceedings of the 2018 IEEE International Symposium on Circuits and Systems (ISCAS)*, Florence, Italy, 2018, pp. 1–5.  
 > [DOI: 10.1109/ISCAS.2018.8351242](https://doi.org/10.1109/ISCAS.2018.8351242)
+
+> Bohui Xiao, Praveen Kumar Venkatachala, Yang Xu, Ahmed ElShater, Calvin Yoji Lee, and Spencer Leuenberger,  
+> “An 80 mA Capacitor-Less LDO With 6.5 µA Quiescent Current and No Frequency Compensation Using Adaptive-Deadzone Ring Amplifier,”  
+> *Proceedings of the 2020 IEEE International Solid-State Circuits Conference (ISSCC)*, pp. 294–296, Feb. 2020.  
+> [DOI: 10.1109/ISSCC19947.2020.9056970](https://ieeexplore.ieee.org/document/9056970)
 
 ---
 
