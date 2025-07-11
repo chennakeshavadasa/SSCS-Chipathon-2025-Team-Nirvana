@@ -232,6 +232,50 @@ Note: The values here are just for reference.
 > Praveen Kumar Venkatachala,  
 > *Design Considerations and Circuit Techniques for Robust Ring-Amplifiers*,  
 > Ph.D. Dissertation, Oregon State University, 2019.
+ 
+## Software Defined Radio
+
+The configurability of the dynamic ring amplifier can be used to create many of the components of a software defined radio (SDR). 
+In an ideal scenario, all the necessary components would be able to fit onto the MOSbius chip to make the low noise amplifier, bandpass filter, freqency downconverting mixer, and antialiasing lowpass filter.
+
+Furthermore, if a small microstrip patch antenna could be integraterd into the MOSbius test breakout board, 
+students would be able to recieve RF signals using just a computer and a MOSbius. This opens the doors to students who are interested in learning about wireless signals, digital signal processing (DSP), and communications systems.
+
+The dynamic ring amplifier could also be used with an external antenna connected via an SMA port attached to the breakout board allowing students to practice antenna design (microstrip patch antenna) and get hands on experience with microstrip transmission lines.
+
+Below are the block diagrams for an SDR. Each of the components (filters, mixer, amplifiers) can be constructed with a fully differential amplifier.
+
+### SDR Reciever Diagram
+<div align="center"> 
+<img width="985" height="313" alt="SDR reciever diagram" src="https://github.com/user-attachments/assets/0ebb4376-a5e2-41e9-af2b-d802c4ecb3fc" />
+</div>
+
+### Fully Differential RF Front-end Circuit
+<div align="center"> 
+ <img width="578" height="185" alt="Fully differential RF front end circuit" src="https://github.com/user-attachments/assets/0f4b5d7b-76ef-4b23-95ef-c10c187781a0"  />
+</div>
+
+### Bandpass Filter Schematic
+<div align="center"> 
+  <img width="869" height="426" alt="Bandpass filter schematic" src="https://github.com/user-attachments/assets/9f1db20c-66e0-4c19-b828-0368cba6d2a6" />
+</div>
+
+
+#### Reference
+
+> “Bandpass Filters: Theory, Circuit, Types and Applications.”
+> [Online]. Available: https://analogcircuitdesign.com/bandpass-filters/
+
+>  Malatest, Brandon
+> “Examining RF Architectures for Software-Defined Radios
+> Microwave Journal.”
+> Available: https://www.microwavejournal.com/articles/43239-examining-rf-architectures-for-software-defined-radios
+
+> J. Liu, X. Wang, K. Gong, G. Zhou, X. Ma, and Y. Yuan,
+> “A Software-Defined Radio Oriented Approach in Constructing RF Front-End Circuit Based on Fully Differential Amplifier,”
+> in 2019 IEEE 9th International Conference on Electronics Information and Emergency Communication (ICEIEC),
+> Jul. 2019, pp. 1–4. doi: 10.1109/ICEIEC.2019.8784542.
+
 
 ## Acknowledgement 
 I would like to express my sincere gratitude to **Dr. Praveen Kumar Venkatachala** for his constant mentorship and guidance throughout this project.
