@@ -4,51 +4,89 @@ K {}
 V {}
 S {}
 E {}
-N 390 -440 390 -420 {lab=VDD}
-N 390 -360 390 -340 {lab=GND}
-N 660 -440 660 -420 {lab=VDD}
-N 660 -300 660 -280 {lab=GND}
-N 490 -380 490 -360 {lab=#net1}
-N 490 -300 490 -280 {lab=GND}
-N 550 -340 600 -340 {lab=#net2}
-N 550 -340 550 -230 {lab=#net2}
-N 550 -230 830 -230 {lab=#net2}
-N 890 -310 890 -230 {lab=#net2}
-N 850 -380 890 -310 {lab=#net2}
-N 720 -380 790 -380 {lab=#net2}
-N 490 -380 600 -380 {lab=#net1}
-N 830 -230 890 -230 {lab=#net2}
-N 890 -170 890 -150 {lab=GND}
-N 790 -380 850 -380 {lab=#net2}
-C {chipathon/RAMP_Ideal/RAMP_Ideal_tb.sym} 380 -360 0 0 {name=x1}
-C {devices/vsource.sym} 390 -390 0 0 {name=V1 value=3.3 savecurrent=false}
-C {devices/gnd.sym} 390 -340 0 0 {name=l1 lab=GND}
-C {devices/vdd.sym} 390 -440 0 0 {name=l2 lab=VDD}
-C {devices/vdd.sym} 660 -440 0 0 {name=l3 lab=VDD}
-C {devices/gnd.sym} 660 -280 0 0 {name=l4 lab=GND}
-C {devices/vsource.sym} 490 -330 0 0 {name=V2 value=1.65 savecurrent=false}
-C {devices/gnd.sym} 490 -280 0 0 {name=l5 lab=GND}
-C {devices/capa.sym} 890 -200 0 0 {name=C1
+N 390 -530 390 -510 {lab=VDD}
+N 390 -450 390 -430 {lab=GND}
+N 660 -530 660 -510 {lab=VDD}
+N 660 -390 660 -370 {lab=GND}
+N 460 -470 460 -450 {lab=VICM}
+N 460 -390 460 -370 {lab=GND}
+N 550 -430 600 -430 {lab=#net1}
+N 720 -470 790 -470 {lab=#net2}
+N 490 -470 600 -470 {lab=VICM}
+N 830 -260 890 -260 {lab=#net2}
+N 890 -200 890 -180 {lab=GND}
+N 790 -470 850 -470 {lab=#net2}
+N 550 -260 570 -260 {lab=#net1}
+N 630 -260 770 -260 {lab=probe}
+N 700 -150 700 -130 {lab=GND}
+N 700 -260 700 -210 {lab=probe}
+N 890 -470 890 -400 {lab=#net2}
+N 850 -470 890 -470 {lab=#net2}
+N 520 -430 520 -340 {lab=#net1}
+N 890 -400 890 -310 {lab=#net2}
+N 890 -310 890 -260 {lab=#net2}
+N 520 -340 520 -260 {lab=#net1}
+N 520 -260 550 -260 {lab=#net1}
+N 520 -430 550 -430 {lab=#net1}
+N 460 -470 490 -470 {lab=VICM}
+C {chipathon/RAMP_Ideal/RAMP_Ideal_tb.sym} 380 -450 0 0 {name=x1}
+C {devices/vsource.sym} 390 -480 0 0 {name=V1 value=3.3 savecurrent=false}
+C {devices/gnd.sym} 390 -430 0 0 {name=l1 lab=GND}
+C {devices/vdd.sym} 390 -530 0 0 {name=l2 lab=VDD}
+C {devices/vdd.sym} 660 -530 0 0 {name=l3 lab=VDD}
+C {devices/gnd.sym} 660 -370 0 0 {name=l4 lab=GND}
+C {devices/vsource.sym} 460 -420 0 0 {name=V2 value=1.65 savecurrent=false}
+C {devices/gnd.sym} 460 -370 0 0 {name=l5 lab=GND}
+C {devices/capa.sym} 890 -230 0 0 {name=C1
 m=1
 value=250p
 footprint=1206
 device="ceramic capacitor"}
-C {devices/gnd.sym} 890 -150 0 0 {name=l6 lab=GND}
-C {devices/code_shown.sym} 0 -550 0 0 {name=NGSPICE only_toplevel=true 
+C {devices/gnd.sym} 890 -180 0 0 {name=l6 lab=GND}
+C {devices/code_shown.sym} 1190 -570 0 0 {name=NGSPICE only_toplevel=true 
 value="
-.option wnflag=1
-.option savecurrents
-.temp 27
+.options savecurrents
 .control
-save all
-write RAMP_Ideal_tb_fb.raw
-set appendwrite 
-op
-write RAMP_Ideal_tb_fb.raw
-**dc V1 0 1.65 1m
-tran 1m 10m 1m
-**tran 100n 5u 100n
-**ac dec 20 1 1e10
+ let runs=2
+ let run=0
+
+ alter @Vprobe1[acmag]=1
+ alter @iprobe1[acmag]=0
+
+ dowhile run < runs
+
+ set run =$&run
+ ac dec 20 0.01 10G
+ write RAMP_Ideal_tb_fb_\{$run\}.raw
+
+ all
+ alter @Vprobe1[acmag]=0
+ alter @iprobe1[acmag]=1
+ let run = run + 1
+ end
+
+ let ip22 = ac2.i(Vprobe2)
+ let vprb1 = ac1.probe
+ let mb = 1/(vprb1+ip22)-1
+ let phase_mb = 180/PI*vp(mb)
+
+ plot phase_mb
+ plot vdb(mb) phase_mb
+
+ meas ac peak MAX vmag(mb) FROM=1 TO=1.5G
+ let f3db = peak/sqrt(2)
+ meas ac f1 WHEN vmag(mb)=f3db RISE=1
+ meas ac BW WHEN vmag(mb)=f3db FALL=1
+ let GBW = peak*BW
+ meas ac pm_deg find phase_mb when vdb(mb)=0
+ meas ac dominant_pole_f when vdb(mb)=0
+ meas ac loop_gain find vdb(mb) at=0.01
+ let Phase_margin=180-abs(pm_deg)
+ print GBW
+ print Phase_margin
+
+ op
+ show m : gm : gmbs : gds : vds : vdsat : vgs : vth : id
 .endc
 "}
 C {devices/code.sym} 0 -190 0 0 {name=SAVE_COMMANDS only_toplevel=false value="
@@ -102,5 +140,11 @@ value="
 
 "}
 C {devices/title.sym} 160 -30 0 0 {name=l7 author="Nithin Purushothama"}
-C {devices/ngspice_probe.sym} 850 -380 0 0 {name=r1}
-C {devices/ngspice_probe.sym} 490 -380 0 0 {name=r2}
+C {devices/ngspice_probe.sym} 890 -470 0 0 {name=r1}
+C {devices/ngspice_probe.sym} 460 -470 0 0 {name=r2}
+C {devices/vsource.sym} 600 -260 1 0 {name=Vprobe2 value="0" savecurrent=false}
+C {devices/vsource.sym} 800 -260 3 1 {name=Vprobe1 value="dc 0 ac 1" savecurrent=false}
+C {devices/isource.sym} 700 -180 2 0 {name=Iprobe1 value="dc 0 ac 1"}
+C {devices/gnd.sym} 700 -130 0 0 {name=l8 lab=GND}
+C {devices/lab_pin.sym} 700 -260 1 0 {name=p1 sig_type=std_logic lab=probe}
+C {devices/lab_pin.sym} 510 -470 1 0 {name=p2 sig_type=std_logic lab=VICM}
