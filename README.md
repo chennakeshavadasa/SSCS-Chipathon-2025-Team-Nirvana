@@ -277,6 +277,8 @@ Below are the block diagrams for an SDR. Each of the components (filters, mixer,
 > in 2019 IEEE 9th International Conference on Electronics Information and Emergency Communication (ICEIEC),
 > Jul. 2019, pp. 1–4. doi: 10.1109/ICEIEC.2019.8784542.
 
+<!--
 
 ## Acknowledgement 
 I would like to express my sincere gratitude to **Dr. Praveen Kumar Venkatachala** for his constant mentorship and guidance throughout this project.
+-->
