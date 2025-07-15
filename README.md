@@ -69,7 +69,7 @@ By this work we intend to bridge theoretical concepts with practical design, our
 ---
 
 # User Cases
-
+<!--
 ## Discrete-Time Pipeline ADC
 
 A pipelined ADC architecture leveraging discrete-time operation and ring amplifiers for high-speed, energy-efficient performance can be implemented. This is based on the work by Benjamin Hershberg et al.,
@@ -125,6 +125,7 @@ The two-step SAR ADC shown above consists of a 9-bit first stage (STG1) and a 13
 > [DOI: 10.1109/JSSC.2019.2943935](https://doi.org/10.1109/JSSC.2019.2943935)
 
 ---
+-->
 
 ## Ring Amplifier Based Switched-Capacitor Amplifiers and Filters
 
