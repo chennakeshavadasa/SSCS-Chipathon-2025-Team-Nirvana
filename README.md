@@ -127,7 +127,7 @@ The two-step SAR ADC shown above consists of a 9-bit first stage (STG1) and a 13
 ---
 -->
 
-## Ring Amplifier Based Switched-Capacitor Amplifiers and Filters
+## Reconfigurable Ring Amplifier Based Switched-Capacitor Amplifiers and Filters
 
 Exploring the use of Fully differential Ring amplifier, which provides the benefits of high gain, fast slew based charging and an almost rail-to-rail output swing. We implement a switched-capacitor (SC) inter-stage residue amplifier that uses this new fully differential ring amplifier to give accurate amplification.
 
